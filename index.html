@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FOTO MÁGICA</title>
+  <title>FOTO MÁGICA - NOMBRE</title>
   <style>
     body {
       margin: 0;
       display: flex;
-      flex-direction: column; /* columna para imagen + texto */
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      background-color: #000; /* fondo negro elegante */
+      background-color: #000;
       color: #fff;
       font-family: 'Arial', sans-serif;
       text-align: center;
@@ -20,8 +20,8 @@
     img {
       max-width: 95%;
       height: auto;
-      border-radius: 10px; /* bordes redondeados */
-      box-shadow: 0 4px 15px rgba(0,0,0,0.5); /* sombra */
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
       margin-bottom: 20px;
     }
     .mensaje {
@@ -31,16 +31,19 @@
     }
     @media (max-width: 600px) {
       .mensaje {
-        font-size: 1.2rem; /* más pequeño en móviles */
+        font-size: 1.2rem;
       }
     }
   </style>
 </head>
 <body>
-  <img src="Sonia.jpg" alt="Foto">
+  <!-- Foto -->
+  <img src="Sonia.jpg" alt="Sonia">
+
+  <!-- Mensaje debajo de la foto -->
   <div class="mensaje">
     Nuestra foto mágica 💖<br>
-    
+   
   </div>
 
   <!-- Contador GoatCounter -->
@@ -48,4 +51,3 @@
           async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
-
