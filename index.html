@@ -8,19 +8,44 @@
     body {
       margin: 0;
       display: flex;
+      flex-direction: column; /* columna para imagen + texto */
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      background-color: #000;
+      background-color: #000; /* fondo negro elegante */
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
     }
     img {
       max-width: 95%;
       height: auto;
+      border-radius: 10px; /* bordes redondeados */
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5); /* sombra */
+      margin-bottom: 20px;
+    }
+    .mensaje {
+      font-size: 1.5rem;
+      line-height: 1.4;
+      max-width: 90%;
+    }
+    @media (max-width: 600px) {
+      .mensaje {
+        font-size: 1.2rem; /* más pequeño en móviles */
+      }
     }
   </style>
 </head>
 <body>
   <img src="Sonia.jpg" alt="Foto">
+  <div class="mensaje">
+    Nuestra foto mágica 💖<br>
+    Cada visita al QR mantiene este recuerdo vivo
+  </div>
+
+  <!-- Contador GoatCounter -->
+  <script data-goatcounter="https://fotomagica.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
 
